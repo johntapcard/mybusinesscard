@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#0c0e12">
   <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    name="description"
+    content="JOHNTAPCARD — NFC Digital Business Cards. One tap is all it takes to connect."
   >
 
-  <title>Digital Business Card</title>
+  <title>JOHNTAPCARD | Digital Business Card</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,9 +20,9 @@
 
   <main class="profile-card">
 
-    <!-- ================================
+    <!-- =================================
          VIDEO BANNER
-    ================================= -->
+    ================================== -->
 
     <section class="banner">
 
@@ -28,18 +30,14 @@
         id="bannerVideo"
         class="banner-video"
         autoplay
+        muted
         loop
         playsinline
         preload="metadata"
+        aria-label="JOHNTAPCARD banner video"
       >
-
-        <source
-          src="banner.mp4"
-          type="video/mp4"
-        >
-
+        <source src="banner.mp4" type="video/mp4">
         Your browser does not support video.
-
       </video>
 
       <div class="banner-overlay"></div>
@@ -47,38 +45,31 @@
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          PROFILE
-    ================================= -->
+    ================================== -->
 
     <section class="profile-section">
 
       <!-- PROFILE PHOTO -->
 
       <div class="profile-photo">
-
         <img
-          class="profile-video"
           src="profile.png"
-          alt="Profile"
+          alt="JOHNTAPCARD profile"
+          class="profile-image"
         >
-
       </div>
-
 
       <!-- NAME -->
 
-      <h1>
-        JOHNTAPCARD
-      </h1>
-
+      <h1>JOHNTAPCARD</h1>
 
       <!-- JOB TITLE -->
 
       <p class="job-title">
         NFC DIGITAL BUSINESS CARDS
       </p>
-
 
       <!-- DESCRIPTION -->
 
@@ -88,89 +79,66 @@
       </p>
 
 
-      <!-- ================================
-           PHONE NUMBER
-      ================================= -->
-
-      <a
-        href="tel:+639931026989"
-        class="phone-number"
-      >
-
-        <span class="phone-icon">
-
-          <img
-            src="phone.png"
-            alt="Phone"
-          >
-
-        </span>
-
-        <span class="phone-text">
-          +63 993 102 6989
-        </span>
-
-        <span class="arrow">
-          ›
-        </span>
-
-      </a>
-
-
-      <!-- ================================
-           SAVE CONTACT
-      ================================= -->
-
-      <a
-        href="#"
-        class="save-contact"
-        id="saveContact"
-      >
-
-        <span class="save-icon">
-          ＋
-        </span>
-
-        <span>
-          Save Contact
-        </span>
-
-      </a>
-
-
-      <!-- ================================
-           SOCIAL LINKS
-      ================================= -->
+      <!-- =================================
+           ALL SOCIAL LINKS
+      ================================== -->
 
       <div class="social-links">
+
+        <!-- PHONE NUMBER -->
+
+        <a
+          href="tel:+639931026989"
+          class="social-button"
+        >
+          <span class="social-icon">
+            <img src="phone.png" alt="">
+          </span>
+
+          <span class="button-label">
+            +63 993 102 6989
+          </span>
+
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+
+        <!-- SAVE CONTACT -->
+
+        <a
+          href="#"
+          class="social-button"
+          id="saveContact"
+        >
+          <span class="social-icon">
+            <span class="save-icon">＋</span>
+          </span>
+
+          <span class="button-label">
+            Save Contact
+          </span>
+
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
 
 
         <!-- FACEBOOK -->
 
         <a
           href="https://www.facebook.com/profile.php?id=61594294572667"
-          class="social"
+          class="social-button"
           target="_blank"
           rel="noopener noreferrer"
         >
-
           <span class="social-icon">
-
-            <img
-              src="facebook.png"
-              alt="Facebook"
-            >
-
+            <img src="facebook.png" alt="">
           </span>
 
-          <span class="social-name">
+          <span class="button-label">
             Facebook
           </span>
 
-          <span class="arrow">
-            ›
-          </span>
-
+          <span class="arrow" aria-hidden="true">›</span>
         </a>
 
 
@@ -178,28 +146,19 @@
 
         <a
           href="https://www.tiktok.com/@johntapcard"
-          class="social"
+          class="social-button"
           target="_blank"
           rel="noopener noreferrer"
         >
-
           <span class="social-icon">
-
-            <img
-              src="tiktok.png"
-              alt="TikTok"
-            >
-
+            <img src="tiktok.png" alt="">
           </span>
 
-          <span class="social-name">
+          <span class="button-label">
             TikTok
           </span>
 
-          <span class="arrow">
-            ›
-          </span>
-
+          <span class="arrow" aria-hidden="true">›</span>
         </a>
 
 
@@ -207,212 +166,136 @@
 
         <a
           href="https://www.instagram.com/johntapcard/"
-          class="social"
+          class="social-button"
           target="_blank"
           rel="noopener noreferrer"
         >
-
           <span class="social-icon">
-
-            <img
-              src="instagram.png"
-              alt="Instagram"
-            >
-
+            <img src="instagram.png" alt="">
           </span>
 
-          <span class="social-name">
+          <span class="button-label">
             Instagram
           </span>
 
-          <span class="arrow">
-            ›
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+
+        <!-- WEBSITE -->
+
+        <a
+          href="https://johntapcard.github.io/johntapcard/"
+          class="social-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="social-icon">
+            <img src="website.png" alt="">
           </span>
 
+          <span class="button-label">
+            View My Website
+          </span>
+
+          <span class="arrow" aria-hidden="true">›</span>
         </a>
 
       </div>
 
-
-      <!-- ================================
-           FOOTER
-      ================================= -->
-
-      <footer class="footer">
-
-        <span class="powered">
-          POWERED BY
-        </span>
-
-        <span class="brand">
-          JOHNTAPCARD
-        </span>
-
-      </footer>
-
     </section>
+
+
+    <!-- =================================
+         FIXED FOOTER
+    ================================== -->
+
+    <footer class="footer">
+      <span class="powered">
+        POWERED BY: JOHNTAPCARD
+      </span>
+    </footer>
 
   </main>
 
 
-  <!-- ================================
+  <!-- =================================
        JAVASCRIPT
-  ================================= -->
+  ================================== -->
 
   <script>
+    // VIDEO SOUND
 
-    /* =================================
-       VIDEO
-    ================================= */
+    const video = document.getElementById("bannerVideo");
 
-    const video =
-      document.getElementById("bannerVideo");
-
-    let videoStarted = false;
-
-
-    function startVideo() {
-
-      if (videoStarted) {
-        return;
-      }
-
-      videoStarted = true;
-
+    function enableVideoSound() {
       video.muted = false;
-
       video.volume = 1;
 
       video.play().catch(() => {
-
-        videoStarted = false;
-
+        // Some browsers require user interaction.
       });
 
+      document.removeEventListener(
+        "pointerdown",
+        enableVideoSound
+      );
     }
-
-
-    document.addEventListener(
-      "click",
-      startVideo,
-      {
-        once: true
-      }
-    );
-
-
-    document.addEventListener(
-      "touchstart",
-      startVideo,
-      {
-        once: true
-      }
-    );
-
 
     document.addEventListener(
       "pointerdown",
-      startVideo,
-      {
-        once: true
-      }
+      enableVideoSound
     );
 
 
-    /* =================================
-       SAVE CONTACT
-    ================================= */
+    // SAVE CONTACT
 
-    const saveContact =
-      document.getElementById("saveContact");
-
-
-    saveContact.addEventListener(
-      "click",
-      function(event) {
+    document
+      .getElementById("saveContact")
+      .addEventListener("click", function (event) {
 
         event.preventDefault();
 
+        const vCard = [
+          "BEGIN:VCARD",
+          "VERSION:3.0",
+          "N:Tapcard;John;;;",
+          "FN:JOHNTAPCARD",
+          "ORG:NEAR FIELD COMMUNICATION",
+          "TITLE:NFC CARDS AGENT",
+          "TEL;TYPE=CELL:+639931026989",
+          "EMAIL:johntapcard@gmail.com",
+          "NOTE:NFC CARD BATANGAS - Batangas Branch",
+          "NOTE:Facebook: Joh Tapcard",
+          "NOTE:Instagram: @johntapcard",
+          "NOTE:TikTok: @johntapcard",
+          "END:VCARD"
+        ].join("\r\n");
 
-        /* ================================
-           VCARD CONTACT INFORMATION
-        ================================= */
+        const blob = new Blob(
+          [vCard],
+          {
+            type: "text/vcard;charset=utf-8"
+          }
+        );
 
-        
-
-
-const vCard = [
-  "BEGIN:VCARD",
-  "VERSION:3.0",
-
-  "N:Tapcard;John;;;",
-  "FN:JOHNTAPCARD",
-  "ORG:NEAR FIELD COMMUNICATION",
-  "TITLE:NFC CARDS AGENT",
-
-  "TEL;TYPE=CELL:+639123456789",
-  "EMAIL:johntapcard@gmail.com",
-  "NOTE:NFC CARD BATANGAS- Batangas Branch",
-  "NOTE: FACEBOOK: Joh  Tapcard",
-  "NOTE: INSTAGRAM: @johntapcard",
-  "NOTE: TIKTOK: @johntapcard",
-  "END:VCARD"
-].join("\r\n");
-
-
-
-        /* ================================
-           CREATE VCARD FILE
-        ================================= */
-
-        const blob =
-          new Blob(
-            [vCard],
-            {
-              type: "text/vcard;charset=utf-8"
-            }
-          );
-
-
-        const url =
-          URL.createObjectURL(blob);
-
-
-        /* ================================
-           CREATE DOWNLOAD
-        ================================= */
-
-        const download =
-          document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        const download = document.createElement("a");
 
         download.href = url;
-
-        download.download =
-          "JOHNTAPCARD.vcf";
-
+        download.download = "JOHNTAPCARD.vcf";
 
         document.body.appendChild(download);
 
         download.click();
+        download.remove();
 
-        document.body.removeChild(download);
-
-
-        /* ================================
-           CLEAN UP
-        ================================= */
-
-        setTimeout(function() {
-
+        setTimeout(() => {
           URL.revokeObjectURL(url);
-
         }, 1000);
 
-      }
-    );
-
+      });
   </script>
 
 </body>
-
 </html>
